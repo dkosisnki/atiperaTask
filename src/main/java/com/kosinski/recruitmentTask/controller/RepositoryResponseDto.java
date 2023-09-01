@@ -1,4 +1,4 @@
-package com.kosinski.recruitmentTask.infrastructure.repodownloader.controller;
+package com.kosinski.recruitmentTask.controller;
 
 import com.kosinski.recruitmentTask.domain.Branch;
 
