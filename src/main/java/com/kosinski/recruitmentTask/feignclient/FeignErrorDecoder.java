@@ -1,13 +1,11 @@
 package com.kosinski.recruitmentTask.feignclient;
 
 
-
 import com.kosinski.recruitmentTask.exception.NotFoundException;
-import org.springframework.stereotype.Component;
-
 import feign.FeignException;
 import feign.Response;
 import feign.codec.ErrorDecoder;
+import org.springframework.stereotype.Component;
 
 @Component
 public class FeignErrorDecoder implements ErrorDecoder {

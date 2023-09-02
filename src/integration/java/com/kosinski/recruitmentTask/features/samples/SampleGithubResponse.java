@@ -309,6 +309,15 @@ public interface SampleGithubResponse {
                 """.trim();
     }
 
+    default String sampleResponseForNonExistentUser(){
+        return """
+                {
+                    "message": "Not Found",
+                    "documentation_url": "https://docs.github.com/rest/repos/repos#list-repositories-for-a-user"
+                }
+                """.trim();
+    }
+
     default String sampleResponseForRepo1(){
        return  """
                 [
@@ -321,7 +330,7 @@ public interface SampleGithubResponse {
                         "protected": false
                     }
                 ]
-                """;
+                """.trim();
 
     }
     default String sampleResponseForRepo2(){
@@ -336,7 +345,7 @@ public interface SampleGithubResponse {
                         "protected": false
                     }
                 ]
-                """;
+                """.trim();
     }
     default String sampleResponseForRepo3(){
         return """
@@ -358,6 +367,6 @@ public interface SampleGithubResponse {
                         "protected": false
                     }
                 ]
-                """;
+                """.trim();
     }
 }

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 
 
-@FeignClient(value ="github", url="${repo-downloader.client.config.url}")
+@FeignClient(value ="${service.name}", url="${service.base.url}")
 public interface RepoDownloaderClient {
 
     @GetMapping("users/{userName}/repos")

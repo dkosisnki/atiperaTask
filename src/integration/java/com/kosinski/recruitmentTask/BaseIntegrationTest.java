@@ -33,7 +33,7 @@ public class BaseIntegrationTest {
 
     @DynamicPropertySource
     public static void propertyOverride(DynamicPropertyRegistry registry) {
-        registry.add("repo-downloader.client.config.url",
+        registry.add("service.base.url",
                 () -> WIRE_MOCK_HOST + ":" + wireMockServer.getPort());
     }
 }
